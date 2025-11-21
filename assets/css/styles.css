@@ -1,0 +1,132 @@
+:root {
+    --background-color: #0A0A0A;
+    --primary-color: #8A2BE2;
+    --accent-color: #00E5FF; 
+    --secondary-color: #1F1F1F;
+    --text-color: #EAEAEA;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+span{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+/* Header Styles */
+
+header{
+height: 200px;
+width: 100%;
+margin: 0 ;
+padding: 0;
+text-align: center;
+padding-top: 2rem ;
+}
+
+.header-container {
+    margin: 0 auto;
+    width: 80%;
+    height: 70px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px var(--accent-color);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    animation: breathe 1.55s ease-in-out infinite;
+   
+}
+
+@keyframes breathe {
+   0%   { transform: translateY(0); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+   
+}
+
+.logo span{
+    width: 80px;
+    height: 60px;
+    color: var(--accent-color);
+    text-shadow: 0 0 5px #00d9ff,
+                         0 0 10px #00d9ff,
+                         0 0 20px #00d9ff,
+                         0 0 40px #0099cc;
+    
+}
+
+.nav-content{
+    font-size: 1rem;
+    margin-right: 3rem;
+}
+
+.nav-content nav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-self: center;
+    font-weight: bold;
+    /* margin-top: 20px; */
+}
+
+.nav-links a {
+    color: var(--text-color);
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color); /* Your cyan */
+}
+
+.nav-links a::after{
+      content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
