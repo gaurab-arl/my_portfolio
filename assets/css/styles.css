@@ -20,6 +20,7 @@ body {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Purple glow top-right */
@@ -650,17 +651,15 @@ header {
 }
 
 .section-sepreator img{
- position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   margin-top: 0;
   transform: rotate(8deg);
-  background-color:  linear-gradient(0deg, transparent, rgba(220, 17, 17, 0.3), transparent) ;
   opacity: 0.5;
   height: 100%;
-
-  
+  filter: hue-rotate(180deg) brightness(1.2);
 }
 
 
@@ -843,9 +842,9 @@ color: var(--text-color);
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 2px solid var(--accent-color);
+  border: 2px solid rgba(124, 58, 237, 0.3);
   border-radius: 10px;
-  background: var(--primary-color);
+  background: rgba(10, 14, 26, 0.8);
   color: var(--text-color);
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -854,8 +853,9 @@ color: var(--text-color);
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 4px var(--accent-color);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.2);
   outline: none;
+  background: rgba(10, 14, 26, 0.95);
 }
 
 .form-group textarea {
@@ -868,7 +868,7 @@ color: var(--text-color);
   padding: 1rem;
   font-size: 1.1rem;
   border-radius: 10px;
-  background: linear-gradient(45deg, var(--primary-colory-color), var(--accent-color));
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
   border: none;
   color: white;
   cursor: pointer;
@@ -899,24 +899,38 @@ color: var(--text-color);
   gap: 1.5rem;
 }
 
-.social-links a {
+.contact-form-container .social-links a {
   width: 50px;
   height: 50px;
-  background: var(--primary-color);
+  background: rgba(0, 240, 255, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-color);
+  color: var(--primary-color);
   font-size: 1.4rem;
   transition: all 0.3s ease;
-  border: 2px solid var(--border-color);
+  border: 2px solid var(--primary-color);
 }
 
-.social-links a:hover {
+.contact-form-container .social-links a:hover {
   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
   color: white;
   border-color: transparent;
   transform: translateY(-3px) rotate(8deg);
-  box-shadow: 0 5px 15px rgba(23, 199, 223, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 240, 255, 0.4);
+}
+
+footer {
+  background: rgba(10, 14, 26, 0.8);
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(0, 240, 255, 0.2);
+  margin-top: 4rem;
+}
+
+footer p {
+  color: var(--text-color);
+  font-size: 1rem;
+  opacity: 0.8;
 }
