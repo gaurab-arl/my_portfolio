@@ -8,7 +8,7 @@
   /* Security alert pink */
   --text-color: #e5e7eb;
 
-   --tertiary-color: #00ff88;  
+  --tertiary-color: #00ff88;
 }
 
 * {
@@ -607,12 +607,14 @@ header {
   /* ADD THIS - Keeps circles above orbits */
 }
 
-.skill-circle[data-skill="web"]:hover , .skill-circle[data-skill="web"]:hover i{
+.skill-circle[data-skill="web"]:hover,
+.skill-circle[data-skill="web"]:hover i {
   border-color: var(--secondary-color);
   color: var(--secondary-color);
 }
 
-.skill-circle[data-skill="security"]:hover , .skill-circle[data-skill="security"]:hover i{
+.skill-circle[data-skill="security"]:hover,
+.skill-circle[data-skill="security"]:hover i {
   border-color: var(--tertiary-color);
   color: var(--tertiary-color);
 }
@@ -1049,3 +1051,6 @@ footer p {
   font-size: 1rem;
   opacity: 0.8;
 }
+
+
+/* test123 */
