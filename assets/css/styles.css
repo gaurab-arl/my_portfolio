@@ -7,6 +7,8 @@
   --secondary-color: #ff0080;
   /* Security alert pink */
   --text-color: #e5e7eb;
+
+   --tertiary-color: #00ff88;  
 }
 
 * {
@@ -278,16 +280,16 @@ header {
 }
 
 .cloud-2 {
-  width: 150px;
-  height: 45px;
+  width: 200px;
+  height: 60px;
   top: 50%;
   right: -5%;
   animation: float-cloud-2 15s ease-in-out infinite;
 }
 
 .cloud-3 {
-  width: 180px;
-  height: 55px;
+  width: 200px;
+  height: 60px;
   bottom: 15%;
   left: 5%;
   animation: float-cloud-3 18s ease-in-out infinite;
@@ -377,17 +379,23 @@ header {
   letter-spacing: 0.5px;
 }
 
-.social-links {
+/* ---------------------Social Links (Home Section)--------------------- */
+
+.primary-container .social-links {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
+  width: 100%;
+
 }
 
-.social-links span {
-  font-size: 1.2rem;
+.primary-container .social-links span {
+  font-size: 1.6rem;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 0;
+
 }
 
 .social-icon {
@@ -403,6 +411,7 @@ header {
   font-size: 1.3rem;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   position: relative;
+  margin-left: 2rem;
 }
 
 .social-icon::before {
@@ -428,6 +437,8 @@ header {
   opacity: 0.6;
 }
 
+
+/* ---------------------Buttons--------------------- */
 
 .buttons {
   display: flex;
@@ -465,11 +476,14 @@ header {
 
 
 .btn-primary {
-  background: var(--primary-color);
-  color: var(--background-color);
+  background: transparent;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .btn-primary:hover {
+  background: var(--accent-color);
+  color: white;
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 240, 255, 0.4);
 }
@@ -487,6 +501,7 @@ header {
   box-shadow: 0 15px 40px rgba(124, 58, 237, 0.4);
 }
 
+/* ---------------------Orbit System--------------------- */
 
 .secondary-container {
   display: flex;
@@ -537,18 +552,22 @@ header {
 .orbit-1 {
   width: 260px;
   height: 260px;
+  pointer-events: none;
   animation: rotate-orbit 20s linear infinite;
 }
 
 .orbit-2 {
   width: 310px;
   height: 310px;
+  pointer-events: none;
   animation: rotate-orbit 25s linear infinite reverse;
 }
 
 .orbit-3 {
   width: 360px;
   height: 360px;
+
+  pointer-events: none;
   animation: rotate-orbit 30s linear infinite;
 }
 
@@ -581,11 +600,29 @@ header {
   top: -35px;
   left: 50%;
   transform: translateX(-50%);
+
+  pointer-events: auto;
+  /* ADD THIS - Forces circles to be clickable */
+  z-index: 10;
+  /* ADD THIS - Keeps circles above orbits */
 }
+
+
+.skill-circle[data-skill="web"]:hover , .skill-circle[data-skill="web"]:hover i{
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.skill-circle[data-skill="security"]:hover , .skill-circle[data-skill="security"]:hover i{
+  border-color: var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+
 
 /* Counter-rotate skill circles to keep them upright */
 .orbit-1 .skill-circle {
   animation: counter-rotate 20s linear infinite;
+
 }
 
 .orbit-2 .skill-circle {
@@ -607,10 +644,83 @@ header {
 }
 
 .skill-circle:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
+}
+
+
+.skill-circle i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.skill-circle:hover i {
+  color: var(--accent-color);
+}
+
+.skill-circle span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+/* Skill circles */
+.skill-circle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: var(--background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* Counter-rotate skill circles to keep them upright */
+.orbit-1 .skill-circle {
+  animation: counter-rotate 20s linear infinite;
+
+}
+
+.orbit-2 .skill-circle {
+  animation: counter-rotate 25s linear infinite reverse;
+}
+
+.orbit-3 .skill-circle {
+  animation: counter-rotate 30s linear infinite;
+}
+
+@keyframes counter-rotate {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(-360deg);
+  }
+}
+
+/* .skill-circle:hover {
   transform: translateX(-50%) scale(1.15);
   border-color: var(--accent-color);
   box-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
 }
+ */
 
 .skill-circle i {
   font-size: 1.5rem;
@@ -632,7 +742,7 @@ header {
 }
 
 
-
+/*  ---------------------        SEPREATOR        --------------------- */
 
 .section-sepreator {
   width: 100%;
@@ -688,7 +798,8 @@ header {
 .contact-header h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));   /* left */
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  /* left */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -707,21 +818,25 @@ header {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   border-radius: 20px;
   overflow: hidden;
-  position: relative; /* Added for pseudo-element positioning */
+  position: relative;
+  /* Added for pseudo-element positioning */
 }
 
 .contact-content::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Transition for smooth appearance */
-  pointer-events: none; /* Allows interaction with content underneath */
+  opacity: 0;
+  /* Hidden by default */
+  transition: opacity 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Transition for smooth appearance */
+  pointer-events: none;
+  /* Allows interaction with content underneath */
 }
 
 .contact-content:hover::before {
-  opacity: 1; /* Visible on hover */
+  opacity: 1;
+  /* Visible on hover */
 }
 
 .contact-info {
@@ -786,9 +901,10 @@ header {
   gap: 0.5rem;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background: var(--secondary-color);
+
+  background: linear-gradient(135deg, #00ffff, #0080ff);
   border-radius: 50px;
-color: var(--text-color);
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -812,6 +928,7 @@ color: var(--text-color);
 .contact-form-container {
   padding: 3rem;
   position: relative;
+  background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.3), transparent);
 }
 
 .contact-form {
@@ -886,7 +1003,7 @@ color: var(--text-color);
   margin-bottom: 1.5rem;
 }
 
-.social-links {
+.social-section .social-links {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
