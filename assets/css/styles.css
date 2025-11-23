@@ -607,7 +607,6 @@ header {
   /* ADD THIS - Keeps circles above orbits */
 }
 
-
 .skill-circle[data-skill="web"]:hover , .skill-circle[data-skill="web"]:hover i{
   border-color: var(--secondary-color);
   color: var(--secondary-color);
