@@ -9,6 +9,8 @@
   --text-color: #e5e7eb;
 
   --tertiary-color: #00ff88;
+
+  --input-color: rgba(0, 240, 255, 0.1);
 }
 
 * {
@@ -792,7 +794,7 @@ header {
 /* ---------------------        CONTACT SECTION        --------------------- */
 /* Contact Page Styles */
 .contact {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 8rem auto 4rem;
   padding: 0 2rem;
 }
@@ -811,6 +813,22 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
+.underline {
+position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  margin-top: 2rem ;
+  margin-bottom: 0.6rem;
+}
+
 .contact-header p {
   color: var(--text-color);
   font-size: 1.2rem;
@@ -822,7 +840,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -835,21 +853,24 @@ header {
   inset: 0;
   opacity: 0;
   /* Hidden by default */
-  transition: opacity 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* transition: opacity 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
   /* Transition for smooth appearance */
   pointer-events: none;
   /* Allows interaction with content underneath */
 }
 
-.contact-content:hover::before {
+/* .contact-content:hover::before {
   opacity: 1;
-  /* Visible on hover */
 }
+*/
+
 
 .contact-info {
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: var(--accent-color);
   padding: 3rem 2rem;
   color: white;
+    
+
 }
 
 .contact-card {
@@ -879,7 +900,8 @@ header {
 
 .contact-card:hover .contact-icon {
   transform: scale(1.1) rotate(5deg);
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
+ 
 }
 
 .contact-icon i {
@@ -901,6 +923,11 @@ header {
   margin: 0;
 }
 
+.contact-card:hover p , .contact-card:hover h3 {
+  color: var(--secondary-color);
+ 
+}
+
 .whatsapp-link {
   display: flex;
   align-items: center;
@@ -909,19 +936,22 @@ header {
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
 
-  background: linear-gradient(135deg, #00ffff, #0080ff);
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   border-radius: 50px;
-  color: var(--text-color);
+  color: var(--text-color); 
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.3s ease;
+ 
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 }
 
 .whatsapp-link:hover {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--text-color);
   transform: translateY(-2px);
 }
+
 
 .whatsapp-link i {
   font-size: 1rem;
@@ -936,6 +966,7 @@ header {
   padding: 3rem;
   position: relative;
   background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  
 }
 
 .contact-form {
@@ -1002,6 +1033,7 @@ header {
   text-align: center;
   padding-top: 2rem;
   border-top: 2px solid var(--accent-color);
+  z-index: 5;
 }
 
 .social-section h3 {
@@ -1019,7 +1051,7 @@ header {
 .contact-form-container .social-links a {
   width: 50px;
   height: 50px;
-  background: rgba(0, 240, 255, 0.1);
+  background: var(--input-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
