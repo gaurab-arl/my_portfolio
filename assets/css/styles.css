@@ -509,12 +509,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 550px;
+  height: 550px;
+  margin-top: -50px;
 }
 
 .orbit-system {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,8 +525,8 @@ header {
 
 .center-image {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -544,7 +547,7 @@ header {
 /* Orbit paths */
 .orbit {
   position: absolute;
-  border: 2px dashed rgba(0, 240, 255, 0.2);
+  border: 2px dashed rgba(79, 154, 159, 0.2);
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -552,22 +555,22 @@ header {
 }
 
 .orbit-1 {
-  width: 260px;
-  height: 260px;
+  width: 290px;
+  height: 290px;
   pointer-events: none;
   animation: rotate-orbit 20s linear infinite;
 }
 
 .orbit-2 {
-  width: 310px;
-  height: 310px;
+  width: 360px;
+  height: 360px;
   pointer-events: none;
   animation: rotate-orbit 25s linear infinite reverse;
 }
 
 .orbit-3 {
-  width: 360px;
-  height: 360px;
+  width: 420px;
+  height: 420px;
 
   pointer-events: none;
   animation: rotate-orbit 30s linear infinite;
@@ -814,7 +817,7 @@ header {
 }
 
 .underline {
-position: relative;
+  position: relative;
 }
 
 .underline::after {
@@ -825,7 +828,7 @@ position: relative;
   width: 80%;
   height: 2px;
   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-  margin-top: 2rem ;
+  margin-top: 2rem;
   margin-bottom: 0.6rem;
 }
 
@@ -869,7 +872,7 @@ position: relative;
   background: var(--accent-color);
   padding: 3rem 2rem;
   color: white;
-    
+
 
 }
 
@@ -901,7 +904,7 @@ position: relative;
 .contact-card:hover .contact-icon {
   transform: scale(1.1) rotate(5deg);
   background-color: var(--secondary-color);
- 
+
 }
 
 .contact-icon i {
@@ -923,9 +926,10 @@ position: relative;
   margin: 0;
 }
 
-.contact-card:hover p , .contact-card:hover h3 {
+.contact-card:hover p,
+.contact-card:hover h3 {
   color: var(--secondary-color);
- 
+
 }
 
 .whatsapp-link {
@@ -938,10 +942,10 @@ position: relative;
 
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   border-radius: 50px;
-  color: var(--text-color); 
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
- 
+
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 }
@@ -966,7 +970,7 @@ position: relative;
   padding: 3rem;
   position: relative;
   background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  
+
 }
 
 .contact-form {
@@ -1085,4 +1089,73 @@ footer p {
 }
 
 
-/* test123 */
+/* @media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info,
+  .contact-form-container {
+    padding: 2rem;
+  }
+
+  .social-section .social-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .btn.primary {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info,
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .contact-icon i {
+    font-size: 1.5rem;
+  }
+
+  .whatsapp-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .social-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form-container .social-links a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+} */
