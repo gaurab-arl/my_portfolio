@@ -70,7 +70,6 @@ h1 {
 
 
 .btn {
-    margin-top: 1rem;
     margin-right: 1rem;
     position: relative;
     background: transparent;
@@ -82,16 +81,7 @@ h1 {
     font-family: var(--main-font-family);
     font-size: 1rem;
     font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-
-.active {
-    color: var(--main-white-color);
-}
-
-.active::after {
-    width: 100%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header {

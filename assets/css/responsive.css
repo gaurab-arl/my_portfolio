@@ -1,0 +1,143 @@
+
+
+@media (max-width: 768px) {
+    .home-page-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+        min-height: auto;
+    }
+
+    .home-page-content {
+        text-align: center;
+        flex: 1 1 auto;
+    }
+
+    .user-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .user-info span {
+        font-size: 0.95rem;
+    }
+
+    .user-second-info {
+        font-size: 1rem;
+    }
+
+    .user-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home-page-skill-images {
+        order: -1;
+        flex: 1 1 auto;
+    }
+
+    .user-sword-container {
+        height: 300px;
+        gap: 1.5rem;
+    }
+
+    .sword {
+        height: 250px;
+        width: 90px;
+    }
+
+    .sword:nth-child(2) {
+        height: 300px;
+        width: 100px;
+    }
+
+    .home-page-ground {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page-wrapper {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .home-page-content {
+        flex: 1 1 auto;
+    }
+
+    .user-info h1 {
+        font-size: 2rem;
+    }
+
+    .user-info span {
+        font-size: 0.9rem;
+    }
+
+    .user-second-info {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .user-sword-container {
+        height: 250px;
+        gap: 1rem;
+    }
+
+    .sword {
+        height: 200px;
+        width: 70px;
+    }
+
+    .sword:nth-child(2) {
+        height: 240px;
+        width: 80px;
+    }
+
+    .home-page-ground {
+        height: 60px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .home-page-header {
+        padding: 0.5rem;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .logo-container {
+        margin-left: 0;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .link {
+        justify-content: center;
+    }
+}

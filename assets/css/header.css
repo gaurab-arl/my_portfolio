@@ -1,10 +1,7 @@
 /*       home page       */
 
 .home-page-header {
-    padding: 1rem;
-    margin: 0 auto;
-    width: clamp(300px, 90%, 1200px);
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .header-nav {
@@ -55,26 +52,6 @@
     align-items: center;
 }
 
-/* .symbol:hover {
-    background: linear-gradient(90deg, var(--main-red-color), var(--main-purple-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.symbol::after {
-    content: "";       can use sword latter like image or svg    
-    margin-left: 0.3rem;
-    font-size: 1.6rem;
-    transform: rotate(15deg);
-    transition: transform 0.3s ease;
-}
-
-.symbol:hover::after {
-    font-size: 1.8rem;
-} */
-
-
 .link {
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -89,58 +66,29 @@
 }
 
 .link::after {
-  content: "";
-  position: absolute; /* Change from relative to absolute */
-  left: 0;
-  bottom: 0px; /* Adjust bottom to be relative to the link's bottom edge */
-  width: 0;
-  height: 2px;
-  background-color: var(--main-red-color);
-  transition: width 0.3s ease;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--main-red-color);
+    transition: width 0.3s ease;
 }
 
 .link:hover {
-  color: var(--main-white-color);
+    color: var(--main-white-color);
 }
 
 .link:hover::after {
-  width: 100%;
+    width: 80%;
 }
 
-@media (max-width: 768px) {
-    .home-page-header {
-        padding: 0.5rem;
-    }
+.active {
+    color: var(--main-white-color);
+}
 
-    .header-nav {
-        flex-direction: column;
-        height: auto;
-        padding: 0.5rem;
-    }
-
-    .logo-container {
-        margin-left: 0;
-        padding: 0.5rem;
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .nav-links {
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-    }
-
-    .link {
-        justify-content: center;
-    }
+.active::after {
+    width: 80%;
 }
