@@ -1,0 +1,153 @@
+@import url('setup_scss.css');
+
+.home-main-content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.home-page-container {
+    padding: 0;
+    background-color: transparent;
+}
+
+.home-page-wrapper {
+     display: flex;
+  flex-direction: row;
+  justify-content: center; /* Changed from space-between for better control with gap */
+  align-items: center;
+  gap: 0.2rem; /* Added explicit gap */
+  min-height: 55vh; /* Changed height to min-height to prevent overflow */
+  width: 100%;
+}
+
+.home-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    max-width: 600px;
+}
+
+.user-info {
+    margin-bottom: 1rem;
+
+}
+
+.user-info h1 {
+    font-size: 2.4rem;
+}
+
+.user-info span {
+    font-size: 1rem;
+
+    color: var(--alternate-white-color);
+    letter-spacing: 0.08em;
+}
+
+.user-second-info {
+    color: var(--main-white-color);
+    font-size: 1.1rem;
+    max-width: 520px;
+    line-height: 1.5;
+}
+
+.user-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-btn {
+    color: var(--main-white-color);
+
+}
+
+.secondary-btn {
+    color: var(--main-white-color);
+    border-color: var(--main-white-color);
+}
+
+.primary-btn:hover {
+    background-color: var(--main-white-color);
+    color: var(--main-ink-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--main-white-color);
+    color: var(--main-ink-color);
+}
+
+.home-page-skill-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+}
+
+.user-sword-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    z-index: 5;
+}
+
+.sword {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    z-index: 5;
+    position: relative;
+}
+
+.first {
+    background: url('../images/sword 1.png');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+
+    position: relative;
+}
+
+.second {
+    background: url('../images/sword 2.png');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
+.third {
+    background: url('../images/sword 3.png');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
+.home-page-ground {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    z-index: 4;
+    border-bottom: 1px solid var(--alternate-white-color);
+}
+
+.ground {
+    top:0;
+    background: url('../images/ground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+}

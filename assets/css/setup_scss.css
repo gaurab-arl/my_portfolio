@@ -1,0 +1,93 @@
+:root {
+
+    /* fonts */
+    --main-font-family: 'Inter', sans-serif;
+    --heading-font-family: 'Cinzel', serif;
+
+    /* font size */
+    --main-font-size: 1.6rem;
+
+    /* ink */
+    --main-ink-color: #141414;
+    --alternate-ink-color: #5E5E5E;
+
+    /* sky / paper */
+    --main-sky-color: #F2EFEA;
+    --alternate-sky-color: #D8D4CC;
+
+    /* soil */
+    --main-soil-color: #3B2A1A;
+    --alternate-soil-color: #4A3A2A;
+
+    /* blood red (accent only) */
+    --main-red-color: #8C1D18;
+    --highlight-red-color: #A32620;
+
+    /* white */
+    --main-white-color: #F2EDE6;
+    --alternate-white-color: #E6E0D8;
+
+    /* moss (optional) */
+    --main-green-color: #2F4A3A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    /* background: linear-gradient(to bottom,
+            var(--main-sky-color),
+            var(--alternate-sky-color)); */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-ink-color);
+    font-weight: bold;
+
+}
+
+h1 {
+    font-weight: bold;
+}
+
+
+.btn {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    background: transparent;
+    border: 2px solid var(--main-red-color);
+    padding: 0.6rem 1.2rem;
+    color: var(--main-red-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.active {
+    color: var(--main-ink-color);
+    border-bottom: 2px solid var(--main-red-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 70px;
+}

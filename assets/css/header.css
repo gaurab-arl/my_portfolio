@@ -1,0 +1,105 @@
+@import url('setup_scss.css');
+
+/*       home page       */
+
+.home-page-header {
+    padding: 1rem;
+    margin: 0 auto;
+    width: clamp(300px, 90%, 1200px);
+    min-height: 100vh;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: clamp(90vh, 1200px, 100%);
+
+    background-color: transparent;
+    /* backdrop-filter: blur(2px); */
+
+    border-bottom: 1px solid var(--main-white-color);
+    border-radius: 0;
+    height: 70px;
+}
+
+.logo-container {
+    flex: 2;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.logo {
+    color: var(--main-ink-color);
+    font-size: var(--main-font-size);
+    border: none;
+    letter-spacing: 0.15em;
+}
+
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+
+    align-items: center;
+}
+
+/* .symbol:hover {
+    background: linear-gradient(90deg, var(--main-red-color), var(--main-purple-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.symbol::after {
+    content: "";       can use sword latter like image or svg    
+    margin-left: 0.3rem;
+    font-size: 1.6rem;
+    transform: rotate(15deg);
+    transition: transform 0.3s ease;
+}
+
+.symbol:hover::after {
+    font-size: 1.8rem;
+} */
+
+
+.link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    position: relative; /* Add this line */
+
+    color: var(--alternate-ink-color);
+}
+
+.link::after {
+  content: "";
+  position: absolute; /* Change from relative to absolute */
+  left: 0;
+  bottom: 0px; /* Adjust bottom to be relative to the link's bottom edge */
+  width: 0;
+  height: 2px;
+  background-color: var(--main-red-color);
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+  color: var(--main-ink-color);
+}
+
+.link:hover::after {
+  width: 100%;
+}
