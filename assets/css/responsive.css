@@ -140,4 +140,44 @@
     .link {
         justify-content: center;
     }
+
+    .about-main-title {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .image {
+        height: 400px;
+        order: -1;
+    }
+
+    .skill-content {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-title span {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-main-title {
+        font-size: 1.5rem;
+    }
+
+    .about-title {
+        font-size: 1.4rem;
+    }
+
+    .image {
+        height: 300px;
+    }
+
+    .skill-title span {
+        font-size: 1.5rem;
+    }
 }
