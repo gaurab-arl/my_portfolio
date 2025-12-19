@@ -1,0 +1,147 @@
+.about-section {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.about-main-container {
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content {
+    height: auto;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    /* Image takes 400px, text takes the rest */
+    gap: 20px;
+}
+
+.image {
+    position: static;
+    height: 100%;
+}
+
+.my-image {
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+}
+
+.index-title {
+    margin-bottom: 1rem;
+}
+
+.about-me {
+    text-align: start;
+    max-width: 620px;
+}
+
+.intro,
+.jourey,
+.approach {
+    height: auto;
+    width: 100%;
+}
+
+.about-title {
+    color: var(--main-white-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.about-title::before {
+  content: "— ";
+  color: var(--main-red-color);
+}
+
+
+
+.about-skill {
+    padding: 4rem 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+.about-skill-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-title {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.line {
+    margin-top: .3rem;
+    height: .2rem;
+    width: 40%;
+    background-color: var(--main-red-color);
+}
+
+.skill-title span {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-right: 1px solid var(--main-red-color);
+}
+
+.skill-item:last-child {
+    border-right: none;
+
+}
+
+.skill-item h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--main-red-color);
+}
+
+.skill-item span {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-item span::before {
+    content: "-";
+    color: var(--main-red-color);
+    align-self: left;
+    width: 3px;
+    height: 4px;
+    position: relative;
+    left: -1rem;
+}
