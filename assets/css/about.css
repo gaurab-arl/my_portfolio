@@ -2,6 +2,7 @@
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    background-image: url('../images/ground2.png');
 }
 
 .about-main-container {
@@ -31,11 +32,15 @@
     object-position: top center;
     width: 100%;
     height: 100%;
-    scale: 1.2;
+    min-height: 400px;
 }
 
 .index-title {
     margin-bottom: 1rem;
+}
+
+.index-title a {
+   top: 2rem;
 }
 
 .about-me {
@@ -44,16 +49,16 @@
 }
 
 .intro,
-.jourey,
+.journey,
 .approach {
     height: auto;
+   padding: 1rem;
     width: 100%;
 }
 
 .about-title {
     color: var(--main-white-color);
     font-size: 1.6rem;
-    margin-bottom: 0.4rem;
 }
 
 .about-title::before {
@@ -106,7 +111,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    background-color: transparent;
+    
 }
 
 .skill-item {
@@ -129,19 +136,20 @@
     border-bottom: 1px solid var(--main-red-color);
 }
 
+.skill-item span::before {
+    content: "-";
+    color: var(--main-red-color);
+    position: absolute;  /* Changed from relative */
+    left: 0;  /* Changed from -1rem */
+    width: 3px;
+    height: 4px;
+}
+
+/* ADD this for proper spacing */
 .skill-item span {
     text-align: center;
     font-size: 1rem;
     margin-bottom: 0.5rem;
     position: relative;
-}
-
-.skill-item span::before {
-    content: "-";
-    color: var(--main-red-color);
-    align-self: left;
-    width: 3px;
-    height: 4px;
-    position: relative;
-    left: -1rem;
+    padding-left: 1rem;  /* ADD THIS to make space for the dash */
 }
