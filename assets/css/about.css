@@ -2,7 +2,7 @@
     min-height: 100vh;
     padding: 0;
     margin: 0;
-    background-image: url('../images/ground2.png');
+    background-image: url('../images/background 2.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -112,12 +112,10 @@
 }
 
 .about-title::before {
-    content: "/ ";
+    content: "⚔︎ ";
     color: var(--main-red-color);
     font-size: 1.5rem;
 }
-
-
 
 .about-skill {
     padding: 4rem 2rem;
