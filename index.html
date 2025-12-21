@@ -198,7 +198,8 @@
         </div>
     </section> -->
 
-    <section class="contact-section" id="contact">
+
+     <section class="contact-section" id="contact">
         <div class="contact-main-container">
             <div class="ground2"></div>
             <div class="contact-main-content">
@@ -207,67 +208,53 @@
                 <div class="contact-content">
                     <div class="contact-content-container">
                         <div class="contact-starting-symbol">
-                             <svg width="600" height="40" viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Left line -->
-                                <line x1="20" y1="20" x2="260" y2="20" stroke="#d8cfc4" stroke-width="1" />
-
-                                <!-- Right line -->
-                                <line x1="340" y1="20" x2="580" y2="20" stroke="#d8cfc4" stroke-width="1" />
-
-                                <!-- Center ornament -->
-                                <g transform="translate(300,20)">
-                                    <polygon points="0,-8 6,0 0,8 -6,0" fill="none" stroke="#d8cfc4" stroke-width="1" />
-                                    <line x1="-12" y1="0" x2="-6" y2="0" stroke="#d8cfc4" stroke-width="1" />
-                                    <line x1="6" y1="0" x2="12" y2="0" stroke="#d8cfc4" stroke-width="1" />
-                                </g>
-                            </svg>
-
+                           
                         </div>
                         <div class="contect-box">
-                            <div class="contact-title contact-background">
-                                <span> CONTACT ME</span>
+                            <div class="contact-title">
+                                <img src="assets/images/title.png" class="contact-background" alt="title">
+                                <span>CONTACT ME</span>
                             </div>
-                            <p>feel free to reach out to me. I'm here to help and to ollaborate on exciting new prjects.
-                            </p>
+                            <p>Feel free to reach out to me. I'm here to help and to collaborate on exciting new
+                                projects.</p>
                         </div>
                         <div class="contact-box-container">
                             <div class="contact-message-box">
                                 <form id="contact-form">
-                                    <span> Name</span>
-                                    <input type="text" name="name" id="name" placeholder="Name">
-                                    <span> Email</span>
-                                    <input type="email" name="email" id="email" placeholder="Email">
-                                    <span> Message</span>
-                                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    <span>Name</span>
+                                    <input type="text" name="name" id="name" placeholder="Name" required>
+                                    <span>Email</span>
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                    <span>Message</span>
+                                    <textarea name="message" id="message" placeholder="Message" required></textarea>
                                     <div class="sumbit-button">
-                                        <button class="btn primary-btn">Send Message</button>
+                                        <button type="submit" class="btn primary-btn">Send Message</button>
                                     </div>
                                 </form>
                             </div>
                             <div class="social-links">
-                                <a href="#">
+                                <a href="#" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#">
+                                <a href="#" aria-label="GitHub">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                                <a href="#">
+                                <a href="#" aria-label="Twitter">
                                     <i class="fa-brands fa-twitter"></i>
                                 </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-envelope"></i>
+                                <a href="#" aria-label="Email">
+                                    <i class="fa-solid fa-envelope"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="sword second contact-sword"></div>
 
             </div>
         </div>
     </section>
-
+    
     <script src="assets/js/main.js"></script>
 </body>
 
