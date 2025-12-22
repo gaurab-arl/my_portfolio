@@ -76,13 +76,17 @@
     z-index: 105;
     scale: 1.25;
     top: -1rem;
-    transform: translateY(80px);
    
 } 
 
 .third {
-    transform: translateY(100px);
+    transform: translateY(50px);
 }
+
+.first {
+    transform: translateY(50px);
+}
+
 .contact-content {
     padding: 1.5rem;
     border-radius: 1rem;
