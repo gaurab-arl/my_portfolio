@@ -1,0 +1,140 @@
+.projects-section {
+    min-height: 100vh;
+    background: url('../images/proj_background.png') center/cover no-repeat;
+    padding: 4rem 1rem;
+    color: #e6e0d8;
+}
+
+
+.projects-main-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.project-intro-content {
+    text-align: center;
+    max-width: 900px;
+}
+
+.project-intro-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.line {
+    width: 180px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #c9a46b, transparent);
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #d6b57a;
+    letter-spacing: 1px;
+}
+
+
+.project-intro-image img {
+    width: 420px;
+    max-width: 90%;
+    margin: 2rem auto;
+    display: block;
+}
+
+.project-intro-content p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-top: 1.5rem;
+}
+
+/*               ------------------------------                */
+
+.project-main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 3rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 450px;
+    width: 450px;
+    overflow: hidden;
+     background-image: url('../images/card-frame.png');
+
+
+}
+.project-card.frame {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+.img {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-intro h2 {
+    color: #e0c089;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.card-technology {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.card-technology span {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #c9a46b;
+    color: #c9a46b;
+}
+
+
+
+
+
