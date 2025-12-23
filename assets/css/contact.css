@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: -3.5rem;
+    margin-top: -1rem;
 }
 
 .contact-main-container::after {
@@ -101,21 +101,6 @@
     justify-content: center;
     padding: 0;
     width: 100%;
-}
-
-.contact-starting-symbol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    width: 100%;
-}
-
-.contact-starting-symbol svg {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    filter: drop-shadow(0 0 3px rgba(216, 207, 196, 0.5));
 }
 
 .contect-box {

@@ -15,6 +15,7 @@
     overflow: hidden;
 }
 
+
 .home-page-wrapper {
     display: flex;
     justify-content: space-between;
@@ -39,7 +40,8 @@
 .user-info {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+
 }
 
 .user-info h1 {
@@ -59,10 +61,15 @@
 
 .user-second-info {
     color: var(--main-white-color);
+    max-width: 550px;
+}
+
+.user-second-info p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 0.5rem 0 1rem 0;
     font-weight: 400;
+    color: var(--alternate-white-color);
 }
 
 .user-buttons {
@@ -200,5 +207,254 @@
     height: 100%;
     background: url('../images/ground.png') repeat-x bottom center;
     background-size: contain;
-    animation: moveGround 20s linear infinite;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1200px) {
+    .home-page-wrapper {
+        padding: 3rem 2rem 5rem;
+        gap: 2rem;
+    }
+
+    .home-page-content {
+        flex: 0 1 450px;
+    }
+
+    .user-info h1 {
+        font-size: clamp(3.5rem, 4rem, 4.5rem);
+    }
+
+    .home-page-skill-images {
+        flex: 0 1 500px;
+        height: 450px;
+    }
+
+    .sword {
+        scale: 1.2;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-page-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 2rem 4rem;
+        gap: 2rem;
+        transform: translateY(0);
+    }
+
+    .home-page-content {
+        flex: 1;
+        text-align: center;
+        align-items: center;
+        max-width: 700px;
+    }
+
+    .user-info h1 {
+        font-size: clamp(3rem, 3.5rem, 4rem);
+    }
+
+    .user-second-info {
+        max-width: 600px;
+    }
+
+    .user-second-info p {
+        font-size: 1rem;
+    }
+
+    .user-buttons {
+        justify-content: center;
+    }
+
+    .home-page-skill-images {
+        flex: 0 1 auto;
+        height: 350px;
+    }
+
+    .user-sword-container {
+        gap: 1.5rem;
+    }
+
+    .sword {
+        scale: 1;
+    }
+
+    .sword:nth-child(1) {
+        height: 250px;
+        width: 120px;
+        --offset: 50px;
+    }
+
+    .sword:nth-child(2) {
+        height: 250px;
+        width: 140px;
+        --offset: 40px;
+    }
+
+    .sword:nth-child(3) {
+        height: 230px;
+        width: 160px;
+        --offset: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-page-wrapper {
+        padding: 2rem 1.5rem 3rem;
+        min-height: 85vh;
+    }
+
+    .user-info h1 {
+        font-size: clamp(2.5rem, 3rem, 3.5rem);
+    }
+
+    .user-info span {
+        font-size: 1rem;
+    }
+
+    .user-second-info {
+        max-width: 500px;
+    }
+
+    .user-second-info p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .user-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .user-buttons .btn {
+        width: 100%;
+    }
+
+    .home-page-skill-images {
+        height: 300px;
+    }
+
+    .user-sword-container {
+        gap: 1rem;
+    }
+
+    .sword:nth-child(1) {
+        height: 200px;
+        width: 100px;
+        --offset: 40px;
+    }
+
+    .sword:nth-child(2) {
+        height: 200px;
+        width: 120px;
+        --offset: 30px;
+    }
+
+    .sword:nth-child(3) {
+        height: 180px;
+        width: 140px;
+        --offset: 50px;
+    }
+
+    .home-page-ground {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-page-wrapper {
+        padding: 1.5rem 1rem 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .user-info h1 {
+        font-size: clamp(2rem, 2.5rem, 3rem);
+        letter-spacing: 0.05em;
+    }
+
+    .user-info span {
+        font-size: 0.9rem;
+    }
+
+    .user-second-info {
+        max-width: 100%;
+    }
+
+    .user-second-info p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0.5rem 0;
+    }
+
+    .user-buttons {
+        gap: 0.8rem;
+    }
+
+    .home-page-skill-images {
+        height: 250px;
+    }
+
+    .user-sword-container {
+        gap: 0.8rem;
+    }
+
+    .sword:nth-child(1) {
+        height: 160px;
+        width: 80px;
+        --offset: 30px;
+    }
+
+    .sword:nth-child(2) {
+        height: 160px;
+        width: 100px;
+        --offset: 20px;
+    }
+
+    .sword:nth-child(3) {
+        height: 150px;
+        width: 120px;
+        --offset: 40px;
+    }
+
+    .sword:hover {
+        transform: translateY(calc(var(--offset) - 30px));
+    }
+
+    .home-page-ground {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .user-info h1 {
+        font-size: clamp(1.8rem, 2rem, 2.5rem);
+    }
+
+    .user-info span {
+        font-size: 0.85rem;
+    }
+
+    .user-second-info p {
+        font-size: 0.85rem;
+    }
+
+    .home-page-skill-images {
+        height: 200px;
+    }
+
+    .sword:nth-child(1) {
+        height: 140px;
+        width: 70px;
+    }
+
+    .sword:nth-child(2) {
+        height: 140px;
+        width: 85px;
+    }
+
+    .sword:nth-child(3) {
+        height: 130px;
+        width: 100px;
+    }
 }
