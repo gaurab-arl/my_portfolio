@@ -315,6 +315,7 @@
             rgba(139, 0, 0, 0.8) 100%);
     border: 2px solid rgba(200, 0, 0, 0.5);
     color: var(--main-white-color);
+    text-align: center;
 }
 
 .card-links .primary-btn:hover {
