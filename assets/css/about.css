@@ -26,6 +26,7 @@
     width: 100%;
     height: 100%;
     z-index: 2;
+    overflow: hidden;
 }
 
 .about-header {
@@ -55,17 +56,19 @@
 .about-content {
     height: auto;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 400px 1fr;
+   
     gap: 3rem;
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    display: flex;
+    
 }
 
 .image {
     position: relative;
     height: 600px;
+    max-width: 500px;
 }
 
 .my-image {
@@ -79,6 +82,11 @@
 
 .about-me {
     text-align: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    max-width: 700px;
 }
 
 .intro,
@@ -164,7 +172,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    width: 100%;
+  
 }
 
 .skill-item {
