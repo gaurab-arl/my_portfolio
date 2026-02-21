@@ -1,79 +1,80 @@
 @media (max-width: 480px) {
-    .site-header{
-        position: fixed;
-        z-index: 101;
-        backdrop-filter: blur(10px);
-        width: 100%;
-    }
-    .home-main-content {
+  .home-main-content {
     padding-top: 70px;
-}
+  }
 
-   
-    .nav-list {
-        flex-direction: column;
-        flex-wrap: wrap;
-       
-    }
 
-    .sword {
-        display: none;
-    }
+  .sword {
+    display: none;
+  }
 
-    .about-content {
-        flex-direction: column;
-    }
+  .about-content {
+    flex-direction: column;
+  }
 
-    .image {
+  .image {
     width: 200px;
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
-}
-.image img {
+  }
+
+  .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+  }
 
 
-    .user-second-info {
-        font-size: 4.6rem;
-    }
+  .user-second-info {
+    font-size: 4.6rem;
+  }
+
+  .projects-main-container{
+padding-top: 3rem;
+  }
+
+  .contact-main-container{
+padding-top: 2rem;
+  }
 
 
-    .skill-content {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 0 1rem;
-    }
+  .skill-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
 
-    .home-page-content {
-        align-items: center;
-        position: static;
-        padding: 2rem 1rem;
-    }
-    #user-title{
-        font-size: 1.1rem;
-    }
-    .user-info h1 {
-        font-size: 2.2rem;
-        color: black;
-    }
-    .user-info span {
-        color: black;
-    }
+  .home-page-content {
+    align-items: center;
+    position: static;
+    padding: 2rem 1rem;
+  }
 
-    .user-second-info {
+  #user-title {
+    font-size: 1.1rem;
+  }
+
+  .user-info h1 {
+    font-size: 2.2rem;
+    color: black;
+  }
+
+  .user-info span {
+    color: black;
+  }
+
+  .user-second-info {
     font-size: 1.2rem;
     text-align: center;
-}
- .user-second-info p{
+  }
+
+  .user-second-info p {
     font-size: 1.2rem;
     line-height: 1.6;
-}
+  }
 
-.user-buttons {
+  .user-buttons {
     flex-direction: column;
     gap: 1rem;
     width: 100%;
@@ -83,53 +84,6 @@
     width: 100%;
     text-align: center;
   }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .navlinks {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: -100%;
-        width: 250px;
-        height: auto;
-        background: rgba(10, 10, 10, 0.95);
-        backdrop-filter: blur(10px);
-        border-left: 1px solid var(--main-red-color);
-        border-bottom: 1px solid var(--main-red-color);
-
-
-        padding: 2rem 1rem;
-        transition: right 0.3s ease;
-        z-index: 1000;
-    }
-
-
-    .navlinks.active {
-        right: 0;
-        display: block;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-        width: 100%;
-    }
-
-    .link {
-        width: 100%;
-        padding: 1rem;
-        font-size: 1.1rem;
-    }
-
-    .fa-solid,
-.fa-brands {
-  color: var(--main-red-color);
-  font-size: 1.2rem;
-}
 }
 
 @media (max-width: 480px) {
@@ -197,45 +151,9 @@
     overflow-x: hidden;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     line-height: 1.3;
-  }
-
-  /* ---------- Header / Nav ---------- */
-  .site-header {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-    height: 64px;
-  }
-
-  .menu-btn {
-    display: block;
-    font-size: 2rem;
-    z-index: 1101;
-    position: relative;
-  }
-
-  .navlinks {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    width: 280px;
-    height: 300px;
-    background: rgba(10, 10, 10, 0.95);
-    padding: 2rem;
-    transition: right 0.35s ease;
-    z-index: 1200;
-  }
-
-  .navlinks.active {
-    right: 0;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 1.5rem;
   }
 
   /* ---------- Hero Section ---------- */
@@ -246,12 +164,16 @@
     padding: 4rem 2rem;
     text-align: center;
   }
+
+
   .home-page-container {
     padding-bottom: 2rem;
   }
+
   .home-page-ground {
     margin-top: -3rem;
   }
+
   .scroll-inidcator {
     display: none;
   }
@@ -329,7 +251,7 @@
   .project-card {
     height: 100%;
   }
- 
+
   .project-category {
     padding: 0 1.2rem;
   }
@@ -380,7 +302,8 @@
     justify-content: center;
     margin-top: 2rem;
   }
-   .contact-content-container {
+
+  .contact-content-container {
     max-width: 100%;
   }
 
@@ -393,12 +316,13 @@
   }
 
   .sword,
-.ground2 {
-  opacity: 0.5;
-}
-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+  .ground2 {
+    opacity: 0.5;
+  }
+
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
 }
