@@ -6,7 +6,7 @@
     cursor: pointer;
     display: none;
     padding: 0.5rem;
-  
+
 }
 
 .home-main-content {
@@ -56,10 +56,10 @@
 }
 
 .user-info h1 {
-    font-size: clamp(4rem, 4.5rem, 5rem);
+    font-size: 72px;
     margin: 0;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 4px;
     line-height: 1.1;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .user-second-info p {
-    font-size: 1.1rem;
+    font-size: 20px;
     line-height: 1.6;
     margin: 0.5rem 0 1rem 0;
     font-weight: 400;
@@ -91,11 +91,13 @@
 .primary-btn {
     color: var(--main-white-color);
     border-color: var(--main-red-color);
+    text-align: center;
 }
 
 .secondary-btn {
     color: var(--main-white-color);
     border-color: var(--main-white-color);
+    text-align: center;
 }
 
 .primary-btn:hover {

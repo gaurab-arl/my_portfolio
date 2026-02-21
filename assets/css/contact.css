@@ -1,6 +1,6 @@
 .contact-section {
     min-height: 60vh;
-    padding: 0;
+    padding: 100px 0;
     margin: 0;
     overflow: hidden;
 }
@@ -22,11 +22,9 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(
-        circle at center,
-        rgba(0,0,0,0.1) 40%,
-        rgba(0,0,0,0.85) 85%
-    );
+    background: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.85) 85%);
     z-index: 6;
     pointer-events: none;
 }
@@ -36,13 +34,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: 
-        linear-gradient(
-            to top,
-            rgba(0,0,0,0.6),
-            rgba(0,0,0,0.1),
-            rgba(0,0,0,0.6)
-        );
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.6));
     z-index: 4;
     pointer-events: none;
 }
@@ -76,8 +72,8 @@
     z-index: 105;
     scale: 1.25;
     top: -1rem;
-   
-} 
+
+}
 
 .third {
     transform: translateY(50px);
@@ -138,12 +134,10 @@
     bottom: -1rem;
     width: 60%;
     height: 1px;
-    background: linear-gradient(
-        to right,
-        transparent,
-        rgba(216,207,196,0.6),
-        transparent
-    );
+    background: linear-gradient(to right,
+            transparent,
+            rgba(216, 207, 196, 0.6),
+            transparent);
 }
 
 .contact-title span {
@@ -152,7 +146,7 @@
     letter-spacing: 0.1em;
     position: relative;
     text-shadow: 1px 1px 2px #DEBDAA,
-    2px 2px 3px var(--main-ink-color);
+        2px 2px 3px var(--main-ink-color);
 }
 
 .contact-background {
@@ -170,7 +164,7 @@
 .contact-box-container {
     margin-top: -1.5rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,19 +179,19 @@
 .contact-message-box {
     position: relative;
     width: 100%;
-    padding: 2rem;
-    border-radius: 0.5rem;
+    padding: 30px;
+    border-radius: 15px;
 
     background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
         url("../images/noise.png");
 
     background-size: cover;
     backdrop-filter: blur(5px);
 
-    border: 1px solid rgba(216,207,196,0.18);
+    border: 1px solid rgba(216, 207, 196, 0.18);
 
-    box-shadow: 
+    box-shadow:
         0 0 10px rgba(0, 0, 0, 0.6),
         inset 0 0 25px rgba(0, 0, 0, 0.35),
         0 0 6px var(--main-ink-color);
@@ -232,7 +226,7 @@
     backdrop-filter: blur(3px);
     width: 100%;
     font-family: inherit;
-    box-shadow: 
+    box-shadow:
         inset 0 2px 5px rgba(0, 0, 0, 0.3),
         0 0 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -242,7 +236,7 @@
 #contact-form textarea:focus {
     background-color: rgba(0, 0, 0, 0.4);
     border-color: rgba(216, 207, 196, 0.5);
-    box-shadow: 
+    box-shadow:
         inset 0 2px 5px rgba(0, 0, 0, 0.4),
         0 0 8px rgba(216, 207, 196, 0.3);
 }
@@ -268,10 +262,10 @@
 #contact-form button {
     margin-top: 1rem;
     align-self: center;
-    background: linear-gradient(135deg, 
-        rgba(139, 0, 0, 0.8) 0%, 
-        rgba(200, 0, 0, 0.9) 50%, 
-        rgba(139, 0, 0, 0.8) 100%);
+    background: linear-gradient(135deg,
+            rgba(139, 0, 0, 0.8) 0%,
+            rgba(200, 0, 0, 0.9) 50%,
+            rgba(139, 0, 0, 0.8) 100%);
     border: 2px solid rgba(200, 0, 0, 0.5);
     padding: 0.9rem 2.5rem;
     border-radius: 0.3rem;
@@ -281,19 +275,19 @@
     font-weight: 600;
     color: var(--main-white-color);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    box-shadow: 
+    box-shadow:
         0 4px 8px rgba(0, 0, 0, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 #contact-form button:hover {
-    background: linear-gradient(135deg, 
-        rgba(200, 0, 0, 0.9) 0%, 
-        rgba(255, 50, 50, 1) 50%, 
-        rgba(200, 0, 0, 0.9) 100%);
+    background: linear-gradient(135deg,
+            rgba(200, 0, 0, 0.9) 0%,
+            rgba(255, 50, 50, 1) 50%,
+            rgba(200, 0, 0, 0.9) 100%);
     border-color: var(--main-red-color);
     transform: translateY(-2px);
-    box-shadow: 
+    box-shadow:
         0 6px 12px rgba(200, 0, 0, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.3),
         0 0 20px rgba(200, 0, 0, 0.3);
@@ -301,7 +295,7 @@
 
 #contact-form button:active {
     transform: translateY(0);
-    box-shadow: 
+    box-shadow:
         0 2px 4px rgba(0, 0, 0, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
@@ -344,7 +338,7 @@
     transform: translateY(-5px);
     background-color: rgba(216, 207, 196, 0.9);
     border-color: rgba(216, 207, 196, 0.9);
-    box-shadow: 
+    box-shadow:
         0 5px 15px rgba(216, 207, 196, 0.4),
         0 0 20px rgba(216, 207, 196, 0.3);
 }
@@ -359,4 +353,3 @@
 .social-links a:hover i {
     color: var(--main-ink-color);
 }
-
