@@ -31,3 +31,20 @@ navlist.forEach(link => {
 
   });
 });
+
+
+const moveupBtn = document.querySelector('.move-up-button');
+
+moveupBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+  const homeId = document.getElementById('home-id');
+  navlist.forEach(item=>{
+    item.classList.remove('active-nav');
+  });
+  homeId.classList.add('active-nav');
+});
+
